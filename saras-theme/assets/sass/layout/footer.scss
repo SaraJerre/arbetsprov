@@ -1,0 +1,30 @@
+@import '../helpers/variables.scss';
+
+@media(min-width: 768px) {
+  footer {
+    display: flex;
+    border: 1px solid #B8B894;
+    border-radius: 2px; 
+    margin: 0 7.5em 2em 7.5em; 
+    } 
+}
+
+.first-widget-area {
+	flex: 1; 
+	margin: 0 1.5em 0 1.5em; 
+}
+
+.second-widget-area, .third-widget-area {
+	flex: 2; 
+	margin: 0 1.5em 0 1.5em; 
+}
+
+/* widget sizes */
+.full {
+	width: 100vw; 
+	flex: none; 
+}
+
+.half {
+	flex: 1; 
+}

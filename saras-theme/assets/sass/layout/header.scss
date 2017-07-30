@@ -1,0 +1,36 @@
+@import '../helpers/_variables.scss';
+
+/* sticky header */
+header {
+	background-color: $white;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 140px;
+	z-index: 4;
+}
+
+header > nav > div.brand {
+	position: absolute;
+    left: 10%;
+    margin: auto;
+    width: 140px;
+}
+
+div.main-menu-nav {
+	@extend header > nav > div.brand;
+    width: 50vw;
+    margin-top: 9vh;
+    border: 1px solid $light-grey;
+    border-radius: 2px;
+    ul > li {
+    	display: inline-block;
+    	margin-right: 1.5em;
+    }
+    ul > li:last-child {
+    	margin-right: 0;
+    }
+}
+
+

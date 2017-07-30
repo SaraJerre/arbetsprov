@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Permanent+Marker|Roboto');
+@import '_variables.scss';
+
+// site title
+h1#site-title {
+	a {
+		text-decoration: none;
+		font-family: 'Permanent Marker', cursive;
+		letter-spacing: 0.1em;
+		color: $black;
+		font-size: 1.2em;
+	}
+}
+
+// nav links
+div.main-menu-nav > ul {
+	list-style-type: none;
+	li > a {
+		font-size: 1em;
+		text-decoration: none;
+		color: $black;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+	}
+	a:hover {
+		text-shadow: 0.5px 2px 1px rgba(0,0,0,0.3);
+	}
+}
+
+a.responsive-menu-item-link {
+	font-family: 'Roboto', sans-serif;
+}
+
+// h1 titles
+h1.the-title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+// text 
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.5;
+}

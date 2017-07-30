@@ -1,0 +1,36 @@
+@import 'page.scss';
+
+@media(min-width: 870px) {
+	article.blog-post {
+		display: flex;
+		align-items: flex-start;
+		margin: 2em 7.5em 3em 7.5em; }
+	img {
+		flex: 1;
+		margin-right: 2em;
+	}
+	.the-excerpt {
+		flex: 2;
+	}
+}
+
+header + section.content {
+	margin-top: 8em;
+}
+
+article.post {
+	@extend section.content > article.page;
+}
+
+article > div.featured-image {
+	@extend div.hero-img;
+	img {
+		width: 100%;
+	}
+}
+
+@media(max-width: 767px) {
+	article.post {
+   		margin: 0em 3em 0 3em; 
+   	}
+} 

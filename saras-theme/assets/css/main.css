@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300|Permanent+Marker|Roboto");
+h1#site-title a {
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 0.1em;
+  color: #000000; 
+  font-size: 1.2em; }
+
+div.main-menu-nav ul {
+  list-style-type: none; }
+  div.main-menu-nav > ul li > a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; }
+  div.main-menu-nav > ul a:hover {
+    text-shadow: 0.5px 2px 1px rgba(0, 0, 0, 0.3); }
+
+/* sticky header */
+header {
+  background-color: #FFFFFF;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 140px;
+  z-index: 4; }
+
+header > nav > div.brand {
+  position: absolute;
+  left: 10%;
+  margin: auto;
+  width: 140px; }
+
+div.main-menu-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50vw;
+  margin-top: 9vh;
+  border: 1px solid #B8B894;
+  border-radius: 2px; }
+  div.main-menu-nav ul > li {
+    display: inline-block;
+    margin-right: 1.5em; }
+  div.main-menu-nav ul > li:last-child {
+    margin-right: 0; }
+
+section.the-img {
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center; 
+  height: 100vh; }
+
+section.content {
+  position: relative; }
+  section.content > article.page, article.post {
+  position: relative;
+  margin-left: 7.5em;
+  width: 70vw; }
+
+div.hero-img, div.featured-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; 
+  width: 80vw; }
+  div.hero-img > img, div.featured-image > img {
+    width: 100%; }
+
+header + section.content {
+  margin-top: 10em; }
+
+@media(min-width: 870px) {
+article.blog-post {
+  display: flex;
+  align-items: flex-start;
+  margin: 2em 7.5em 3em 7.5em; } 
+footer {
+    display: flex;
+    border: 1px solid #B8B894;
+    border-radius: 2px; 
+    margin: 2em 7.5em 2em 7.5em; } }
+
+article.blog-post > img {
+  flex: 1;
+  margin-right: 2em; }
+
+article.blog-post > .the-excerpt {
+  flex: 2; }
+
+h1.the-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2em; }
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5; }
+
+a.responsive-menu-item-link {
+  font-family: 'Roboto', sans-serif; }
+
+.first-widget-area {
+  flex: 1; 
+  margin: 0 1.5em 0 1.5em; }
+
+.second-widget-area, .third-widget-area {
+  flex: 2; 
+  margin: 0 1.5em 0 1.5em; }
+
+/* widget sizes */
+.full {
+  width: 100vw; 
+  flex: none; }
+
+.half {
+  flex: 1; }
+
+@media(max-width: 767px) {
+  h1.the-title {
+    margin-top: 3em; }
+  article.page, article.post {
+    margin: 0em 3em 0 3em; } 
+  section.the-img {
+    display: none; } }
+
+@media(max-width: 1024px) {
+  section.the-img {
+    height: 40vh; } }
+

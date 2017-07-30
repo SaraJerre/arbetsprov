@@ -1,0 +1,39 @@
+section.the-img {
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center; 
+  height: 100vh; }
+
+section.content {
+    position: relative; }
+    article.page {
+        position: relative;
+        margin-left: 7.5em;
+        width: 70vw; }
+}
+
+div.hero-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    width: 80vw; 
+    img {
+        width: 100%; 
+    }
+}
+
+@media(max-width: 767px) {
+    h1.the-title {
+        margin-top: 3em; }
+    article.page {
+        margin: 0em 3em 0 3em; } 
+    section.the-img {
+        display: none; } 
+}
+
+@media(max-width: 1024px) {
+    section.the-img {
+        height: 40vh; } 
+}
